@@ -1,6 +1,7 @@
 import express from 'express'
 import ejs from 'ejs'
 import { data } from './data'
+import { cities} from './data'
 
 const app = express()
 
@@ -20,6 +21,10 @@ app.get('/', (req, res) =>{
 
 app.get('/group', (req, res) => {
     res.render('group', {data})
+})
+
+app.get('/cities', (req, res) => {
+    res.render('cities', {cities})
 })
 
 app.listen(app.get('port'), () =>{

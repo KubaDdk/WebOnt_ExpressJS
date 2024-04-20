@@ -1,0 +1,22 @@
+<%- include("header") %>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Population</th>
+            <th>Size</th>
+        </tr>
+        <% for (let city of cities) { %>
+            <tr>
+                <td>
+                    <%=city.name %>
+                </td>
+                <td>
+                    <%=city.population%>
+                </td>
+                <td>
+                    <%=city.size%>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+    <%- include("footer") %>

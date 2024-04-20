@@ -1,6 +1,5 @@
-<h1>Hello World!</h1>
-This is yet another boring hello world app
-<br>
+<%- include("header") %>
+
 My name is <%= person.name %>
     <br>
     My age is <%= person.age %>
@@ -12,3 +11,4 @@ My name is <%= person.name %>
             <%} else { %>
                 <p>Je bent jong</p>
                 <% } %>
+                <%- include("footer") %>

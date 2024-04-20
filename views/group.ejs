@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>People</title>
-</head>
-<body>
+<%- include("header") %>
+
     <h1>People</h1>
     <ul>
-        <% data.forEach(function(person) { %>
+        <% for (let person of data) { %>
             <li>Name: <%= person.name %>, Age: <%= person.age %></li>
-        <% }); %>
+        <% }; %>
     </ul>
-</body>
-</html>
+    <%- include("footer") %>
