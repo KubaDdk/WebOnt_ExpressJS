@@ -28,6 +28,8 @@ const data: Person[] = [
 
 ]
 
+app.use(express.static('public'))
+
 
 app.set("port", 3000)
 
@@ -59,6 +61,13 @@ app.use((req, res) => {
     res.type('text/html')
     res.status(404)
     res.send('404 - Not Found')
+})
+
+//this is how you can send any data:
+app.get('/random', (req, res) => {
+    let randomGetal = Math.random()*100
+    res.type('text/html')
+    res.send(`Het random getal is ${randomGetal}`)
 })
 
 

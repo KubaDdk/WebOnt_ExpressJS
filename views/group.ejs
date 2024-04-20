@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People</title>
+</head>
+<body>
+    <h1>People</h1>
+    <ul>
+        <% data.forEach(function(person) { %>
+            <li>Name: <%= person.name %>, Age: <%= person.age %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
