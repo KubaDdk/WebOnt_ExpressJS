@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ejs.ts"
+    "start": "nodemon req-sort.ts"
   },
   "author": "",
   "license": "ISC",
